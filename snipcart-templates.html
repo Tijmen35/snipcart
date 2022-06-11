@@ -4,17 +4,23 @@
 
     <body>
         <div id="snipcart-templates">
-            <component-to-override>
-               <div class="root">
-                   <div class="snipcart-featured-payment-methods">
+<div hidden id="snipcart" data-api-key="<API_KEY>">
+    <component-to-override>
+        <!-- The template must have a single root element -->
+        <div class="root">
+            <div class="snipcart-featured-payment-methods">
     <ul class="snipcart-featured-payment-methods__list">
         <li class="snipcart-featured-payment-methods__list-item">
             <icon name="visa" alt="Visa" class="snipcart__icon--brand"></icon>
         </li>
+        <li class="snipcart-featured-payment-methods__list-item">
+            <icon name="mastercard" alt="Mastercard" class="snipcart__icon--brand"></icon>
+        </li>
     </ul>
-</div> 
-                </div>
-            </component-to-override>
+</div>
+        </div>
+    </component-to-override>
+</div>
         </div>
     </body>
 </html>
